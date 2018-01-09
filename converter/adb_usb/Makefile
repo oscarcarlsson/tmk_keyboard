@@ -1,5 +1,5 @@
 # Target file name (without extension).
-TARGET ?= adb_usb
+TARGET ?= adb_aek
 
 # Directory common source filess exist
 TMK_DIR ?= ../../tmk_core
@@ -19,7 +19,7 @@ CONFIG_H = config.h
 # atmega32u4 	Teensy2.0
 # atemga32u4	TMK Converter rev.1
 # atemga32u2	TMK Converter rev.2
-MCU ?= atmega32u2
+MCU ?= atmega32u4
 
 # Processor frequency.
 #     This will define a symbol, F_CPU, in all source code files equal to the
@@ -82,7 +82,7 @@ ADB_MOUSE_ENABLE = yes
 #ACTIONMAP_ENABLE = yes         # Use 16bit actionmap instead of 8bit keymap
 #KEYMAP_SECTION_ENABLE = yes	# fixed address keymap for keymap editor
 
-# ADB Mice need acceleration for todays much bigger screens. 
+# ADB Mice need acceleration for todays much bigger screens.
 OPT_DEFS += -DADB_MOUSE_MAXACC=8
 
 
